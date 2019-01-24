@@ -13,10 +13,10 @@ public class MoonWeight {
       Scanner scanner = new Scanner(System.in);
 
       System.out.print("Earth Weight: ");
-    while (scanner.hasNextInt()) {
-      weight = scanner.nextInt();
+    while (scanner.hasNextDouble()) {
+      weight = scanner.nextDouble();
       double moonWeight = weight * .17;
-      System.out.printf("Your weight on Mars would be: %d", moonWeight);
+      System.out.printf("Your weight on Mars would be: " + moonWeight);
       System.out.println("Earth Weight: ");
     }
 
